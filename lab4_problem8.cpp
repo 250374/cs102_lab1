@@ -4,17 +4,16 @@
 #include <iostream>
 using namespace std;
 int main() {
-    char ch;
-    cout << "Enter a character: ";
-    cin >> ch;
-    if (ch >= "A" && ch <= "Z") {
-        cout << ch << " is a capital letter" << endl;
+    char a;
+    cout << "Enter a letter" ;
+    cin >> a;
+    if (int(a) >= 65 && int(a) <= 90) {
+        cout << "Uppercase letter"<<endl;
     }
-    else if (ch >= 'a' && ch <= 'z') {
-        cout << ch << " is not a capital letter" << endl;
+    else if (int(a) >= 97 && int(a) <=122) {
+        cout << "Lowercas letter" ;
     }
-    else {
-        cout << ch << " is not in the alphabet" << endl;
-    }
+    else
+        cout << "It is not an alphabet" << endl;
     return 0;
 }
