@@ -1,16 +1,22 @@
 #include <iostream>
 using namespace std;
 int main() {
-    char a;
-    cout << "Enter a letter" ;
-    cin >> a;
-    if (int(a) >= 65 && int(a) <= 90) {
-        cout << "Uppercase letter"<<endl;
+    int speed;
+    cout << "Enter the speed: " ;
+    cin >> speed ;
+    if (speed >= 0){
+        if (speed <= 20){
+            cout << "Too slow" ;
+        }
+        else if (speed >= 80){
+            cout << "Too fast" ;
+        }
+        else {
+            cout << "Just right" ;
+        }
     }
-    else if (int(a) >= 97 && int(a) <=122) {
-        cout << "Lowercas letter" ;
+    else {
+        cout << "Speed can't be less than zero!" ;
     }
-    else
-        cout << "It is not an alphabet" << endl;
-    return 0;
+    return 0; 
 }
